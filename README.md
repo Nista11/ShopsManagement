@@ -1,1 +1,7 @@
 # ShopsManagement
+Shops Management is a <b>full-stack web application</b> which allows owners to manage their respective shops. The <b>backend</b> is written in <b>Java</b> using <b>Spring</b>, which communicates with a <b>PostgreSQL database</b>, and the frontend in <b>javascript</b> using React. It can be deployed using <b>Docker</b>, with the required setup files already available.
+## Features
+<b>Register and login</b>: Implemented using <b>Json Web Tokens</b> and <b>Spring Security</b>. There are four user types: anonymous (not logged in), regular, moderator, and admin.<br><br>
+<b>Seeing, adding, updating, and deleting entities</b>: Based on their roles, the users can perform certain permitted operations. The entities of this application are shops, couriers, clients, products, user profiles, and transactions.<br><br>
+<b>Chatting with other users</b>: Users can choose a nickname and save it and chat with other users. Implemented using <b>web sockets</b>.<br><br>
+<b>Modifying all records</b>: The admin can generate realistic looking records for the database in order to test the application, provided that the backend is deployed on Linux. A <b>C program</b> writes multiple files for different entites with SQL insert batches, then a few <b>Shell scripts</b> make the PostgreSQL database read and execute the insertions. In a similar way, the admin can delete all records, update how many entries per page are shown, and see the total count for each entity.
