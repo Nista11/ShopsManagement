@@ -9,7 +9,7 @@ Shops Management is a <b>full-stack web application</b> which allows owners to m
 ## Showcase
 
 ![login](https://github.com/Nista11/ShopsManagement/assets/42772160/95484aae-46b3-4131-bd7a-83506b88cf23)
-![showGuitarsByPrice](https://github.com/Nista11/ShopsManagement/assets/42772160/c0811ea4-73fe-4c8e-9727-b832a816516f)
+![showGuitarsByPrice](https://github.com/Nista11/ShopsManagement/assets/42772160/ec3df05d-8b58-445b-9dc5-0ef856d3cefd)
 ![addClient](https://github.com/Nista11/ShopsManagement/assets/42772160/85aa20b6-0a5b-4d1a-b52c-b897cd1504c2)
 ![chatSdi](https://github.com/Nista11/ShopsManagement/assets/42772160/7c7898ce-0761-44cc-83bf-1d60182f2647)
 ![adminSdi](https://github.com/Nista11/ShopsManagement/assets/42772160/db272c09-2352-456f-8349-5c8ab932312f)
