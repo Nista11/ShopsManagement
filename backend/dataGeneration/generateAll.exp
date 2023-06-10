@@ -1,0 +1,36 @@
+#!/usr/bin/expect
+
+set timeout -1
+set dbuser "dbuser"
+set dbpass "1234"
+set dbname "mydb"
+set dbprompt "$dbname=#"
+
+spawn psql -d $dbname -U $dbuser
+expect "Password for user $dbuser:"
+send "$dbpass\r"
+expect "$dbprompt"
+send "\\i generate_users.sql\r"
+expect "$dbprompt"
+send "\\i generate_users_profiles.sql\r"
+expect "$dbprompt"
+send "\\i generate_user_created.sql\r"
+expect "$dbprompt"
+send "\\i generate_authorities.sql\r"
+expect "$dbprompt"
+send "\\i generate_shops.sql\r"
+expect "$dbprompt"
+send "\\i generate_products.sql\r"
+expect "$dbprompt"
+send "\\i generate_clients.sql\r"
+expect "$dbprompt"
+send "\\i generate_transactions.sql\r"
+expect "$dbprompt"
+send "\\i generate_couriers.sql\r"
+expect "$dbprompt"
+send "\\i generate_shopsCouriers.sql\r"
+expect "$dbprompt"
+send "\\i generate_guitars.sql\r"
+expect "$dbprompt"
+send "\\q\r"
+interact
